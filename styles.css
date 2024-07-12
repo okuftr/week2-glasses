@@ -1,0 +1,650 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	width: 100%;
+	font-size: 1rem;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.warp{
+	margin: auto;
+	max-width: 1920px;
+}
+
+header{
+	background-color: #AA0601;
+	margin: auto;
+	
+}
+footer{
+	background-color: #AA0601;
+	margin: auto;
+}
+
+.nav{
+	max-width: 1296px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+	color: white;
+}
+.nav_foot{
+	max-width: 1296px;
+	margin: auto;
+	color: white;
+}
+
+.nav_foot ul{
+	display: flex;
+	flex-direction: row;
+}
+.nav_foot_list{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 48px;
+	padding-bottom: 24px;
+}
+.nav_foot a{
+	color: white;
+	text-decoration: none;
+	display: block;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.nav_foot ul{
+	gap:48px;
+}
+.social{
+	display: flex;
+	flex-direction: row;
+}
+.social img{
+	max-width: 48px;
+	height: auto;
+	padding-left: 32px;
+}
+.nav img{
+	max-width: 80px;
+}
+
+.nav ul{
+	display: flex;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+.nav a{
+	color: white;
+	text-decoration: none;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: block;
+}
+/*
+.main_pic{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	max-width: 1920px;
+	margin: auto;
+}
+
+.main_pic img{
+	height: auto;
+	width: 100%;
+}*/
+
+.main_pic {
+	background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+	height: 787px;
+	background-size: cover;
+
+}
+.container {
+	max-width: 1296px;
+	margin: 0 auto;
+
+}
+.main_word {
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: right;
+	color: #650300;
+	font-size: 36px;
+}
+
+.main-title{
+	font-size: 64px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+	
+
+.buy-btn{
+	background-color: #AA0601;
+	color: white;
+	direction: none;
+	font-family: Noto Sans;
+	font-weight: Medium;
+	line-height: 1.5;
+	border: 0px;
+	font-size: 20px;
+	height: 41px;
+	width: 104px;
+}
+
+.layer2{
+	background-color: #fbf2f2;
+	margin: auto;
+}
+
+.layer3{
+	margin: auto;
+}
+.layer5{
+	margin: auto;
+}
+.layer6{
+	background-color: #fbf2f2;
+	margin: auto;
+}
+.width2{
+	max-width: 1296px;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.form{
+	max-width: 636px;
+	margin: auto;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+h2{
+	font-size: 48px;
+	color: #650300;
+	margin-bottom: auto;
+	text-align:center
+}
+
+h3{
+	font-size: 24px;
+	color: #650300;
+	line-height: 1.5;
+}
+h4{
+	font-size: 48px;
+	color: #aa0601;
+	line-height: 1.5;
+	font-weight: bold;
+	font-family: Roboto;
+	font-style: italic;
+	text-align: center;
+}
+h5{
+	font-size: 14px;
+	color: #707070;
+	line-height: 1.5;
+	text-align:left;
+	font-family: Noto Sans TC;
+}
+.name{
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	text-align:left;
+	font-family: Noto Sans TC;
+	font-style: Medium;
+	padding-top: 16px;
+	padding-bottom: 8px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.icon_cus1 p{
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	text-align:start;
+	font-family: Noto Sans TC;
+	font-style: Regular;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.icon_cus2 p{
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	text-align:start;
+	font-family: Noto Sans TC;
+	font-style: Regular;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.icon_cus3 p{
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	text-align:start;
+	font-family: Noto Sans TC;
+	font-style: Regular;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+.icon_cus4 p{
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	text-align:start;
+	font-family: Noto Sans TC;
+	font-style: Regular;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+p{
+	font-size: 16px;
+	color: #000000;
+	line-height: 1.5;
+	text-align:start;
+	font-family: Noto Sans TC;
+	font-style: Regular;
+}
+.time{
+	margin-top: auto;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+.icon{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+	text-align:center;
+	gap:3.7%;
+}
+
+
+.icon_DOUBLE{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	align-items: flex-start;
+	text-align:center;
+}
+
+.icon_cus{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+	text-align:center;
+	padding-top: 48px;
+	gap: 24px;
+}
+.icon img{
+	width: 100%;
+}
+
+
+
+.icon1{
+	max-width: 306px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_cus1{
+	max-width: 306px;
+	min-height: 511px;
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+	align-items: flex-start;
+	box-shadow: 0px 2px 6px #00000029;
+	border: 1px solid #DEE2E6;
+	border-radius: 4px;
+	opacity: 1;
+}
+
+
+.icon1h img{
+	max-width: 83.83px;
+}
+.icon2h img{
+	max-width: 83.83px;
+}
+.icon3h img{
+	max-width: 83.83px;
+}
+.icon4h img{
+	max-width: 83.83px;
+}
+
+.icon1h{
+	height: 140px;
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_cush{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.icon_cus2h{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	align-items: center;
+}
+.icon_cus3h{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	align-items: center;
+}
+.icon_cus4h{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	align-items: center;
+}
+
+.layer4{
+	background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.DOUBLE_A{
+	max-width: 648px;
+	padding-top: 48px;
+}	
+.YOUTH{
+	max-width: 648px;
+	padding-top: 48px;
+}	
+.DOUBLE_h4{
+	background-color: white;
+}
+.layer4 h2{
+	color: white;
+}
+.long_button{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.sent-button{
+	background-color: #AA0601;
+	color: white;
+	direction: none;
+	font-family: Noto Sans;
+	font-weight: Medium;
+	line-height: 1.5;
+	border: 0px;
+	font-size: 20px;
+	height: 56px;
+	width: 416px;
+}
+.context{
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+.ittle_tittle{
+	font-size: 16px;
+}
+.answer_bolder{
+	border: 1px solid #000000;
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+.answer{
+	color: #000000;
+	opacity: 0.2;
+	line-height: 1.5;
+	padding-left: 12px;
+}
+.big_answer_bolder{
+	border: 1px solid #000000;
+	height: 136px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+}
+.rectengle{
+	border: 1px solid #000000;
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.row1{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+.row2{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	padding-top: 8px;
+	padding-bottom: 32px;
+	border-bottom: white solid 1px;
+}
+.te .row1 .material-symbols-outlined{
+	font-size: 40px;
+	padding-right: 20px;
+	font-weight: bold;
+}
+.te .row2 .material-symbols-outlined{
+	font-size: 40px;
+	padding-right: 20px;
+	font-weight: bold;
+}
+.number{
+	font-size: 36px;
+}
+.bottom{
+	padding-top: 32px;
+	padding-bottom: 32px;
+	font-size: 16px;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.priv{
+	display: flex;
+	flex-direction: row;
+}
+.serv{
+	padding-left: 48px;
+}
+
+.icon_SUNGLASSES{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	align-items: space-between;
+	text-align:center;
+}
+
+.icon_DOUBLE img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -2px;
+}
+.icon_cus img{
+	width: 100%;
+	height: auto;
+	margin-bottom: -2px;
+}
+
+.sunglass-container {
+	display: flex;
+	gap: 24px;
+	padding-top: 48px;
+}
+
+.sunglass-container .item img{
+	max-width: 100%;
+}
+
+.width3{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+@media(min-width: 768px) and (max-width: 1296px){
+	h4 {
+		font-size: 32px;
+	}	
+
+}
+
+@media(max-width: 768px){
+	.warp{
+		margin: auto;
+		max-width: 768px;
+	}
+	.nav{
+		margin: auto;
+		max-width: 696px;
+	}
+	.main_pic {
+		background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+		height: 787px;
+		background-size: cover;
+	}
+	.pand{
+		padding-right: 5.17%;
+		padding-left: 5.17%;
+	}
+	.icon1{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.icon{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		text-align:center;
+		flex-wrap: wrap;
+		gap:3.45%;
+		padding-right: 5.17%;
+		padding-left: 5.17%;
+	}
+
+	.sunglass-container{
+		margin-left: 28.5%;
+		margin-right: 28.5%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.icon_DOUBLE{
+		display: flex;
+		flex-wrap: wrap;
+		padding-right: 5.17%;
+		padding-left: 5.17%;
+	}
+	.icon_cus{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-right: 5.17%;
+		padding-left: 5.17%;
+		gap:3.45%;
+		text-align: center;
+	}
+	.icon_cus1{
+		margin-bottom: 24px;
+	}
+	.form{
+		max-width: 75%;
+	}
+	.long_button{
+		max-width: 43.8%;
+	}
+	.nav_foot{
+		padding-right: 5.17%;
+		padding-left: 5.17%;
+	}
+	.nav_foot ul{
+		gap:24px;
+	}
+	
+
+
+
+
+}
